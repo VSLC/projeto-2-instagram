@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+.navbar,
+.conteudo {
+    width: 935px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.conteudo {
+    position: relative;
+    width: 935px;
+}
+
+.tamanho-icone {
+    width: 25px;
+    height: 25px;
+    color: black;
+    margin-right: 10px;
+}
+
+.navbar {
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-input {
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 12px;
+    color: #979797;
+    border-radius: 4px;
+    padding: 5px 40px;
+    border: 1px solid #DBDBDB;
+}
+
+.navbar-inicio {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.elementos-stories {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.caixa-stories {
+    padding: 10px;
+    border: 1px solid #DBDBDB;
+    width: 614px;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.seta-icon {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #DBDBDB;
+}
+
+.posts {
+    border: 1px solid #DBDBDB;
+    margin: 30px auto;
+}
+
+.linha-vertical {
+    width: 1px;
+    height: 30px;
+    background-color: #DBDBDB;
+}
+
+.navbar-inicio img {
+    margin-left: 10px;
+    color: #fafafa;
+}
+
+.coluna-de-posts {
+    margin: 20px 0px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    width: 293px;
+    margin-left: 40px;
+}
+
+.conteudo-principal {
+    width: 614px;
+}
+
+@media (max-width:935px) {
+    .navbar {
+        margin: 0px 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .caixa-stories {
+        margin: 20px auto;
+    }
+
+    .posts {
+        margin: 20px auto;
+    }
+
+    .caixa-stories,
+    .conteudo-principal {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 614px) {
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+}
