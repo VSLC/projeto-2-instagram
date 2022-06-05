@@ -3,9 +3,14 @@
 * {
   box-sizing: border-box;
 }
+  
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fafafa;
+}
+
+.none-desktop {
+  display: none;
 }
 
 .navbar,
@@ -38,6 +43,10 @@ header {
   align-items: center;
 }
 
+.barra-inferior-mobile {
+  display: none;
+}
+
 .navbar-input {
   background-color: #fafafa;
   text-align: center;
@@ -56,6 +65,8 @@ header {
 strong {
   font-weight: bold;
 }
+
+
 
 .posts-icons {
   margin: 10px;
@@ -80,6 +91,7 @@ strong {
   width: 25px;
   height: 25px;
 }
+
 .posts-persona img {
   padding: 10px;
   width: 60px;
@@ -87,6 +99,17 @@ strong {
 
 .elementos-stories {
   padding: 10px;
+}
+
+.elementos-stories div img {
+  border: 3px solid transparent;
+}
+
+.elementos-stories div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 .width-stories {
@@ -115,8 +138,8 @@ strong {
 .sidebar {
   position: fixed;
   top: 120px;
-  right: 460px;
-  width: 293px;
+  right: 490px;
+  max-width: 293px;
 }
 
 .sidebar-superior-lado,
@@ -290,24 +313,29 @@ strong {
 }
 
 @media (max-width: 614px) {
+
   .conteudo {
-    width: 100% !important;
+    background-color: blue;
+    min-width: 100%; 
   }
 
+  .esquerda {
+    margin-left: 400px;
+  }
   .tamanho-icone {
     margin-right: 20px;
   }
 
-  .posts {
-    width: 100%;
-  }
-
   .caixa-stories {
     width: 100%;
+    justify-content: space-between;
     background-color: #fafafa;
-    border: 1px solid #fafafa;
-    display: flex;
-    justify-content: center;
+    border: 1px solid #fff;
+    margin-top: 5px;
+  }
+
+  .posts-icons {
+    width: 100%;
   }
 
   .none-mobile {
@@ -319,6 +347,8 @@ strong {
   }
 
   .posts {
+    width: 635px;
+    background-color: red;
     margin: 40px 0px;
   }
 
