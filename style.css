@@ -36,6 +36,10 @@ header {
   margin-right: 10px;
 }
 
+.pull-left {
+  margin-right: 20px;
+}
+
 .navbar {
   height: 54px;
   display: flex;
@@ -67,16 +71,9 @@ strong {
 }
 
 .posts-icons {
-  margin: 10px;
-  width: 100%;
-}
-
-.pull-right {
-  margin-left: 470px;
-}
-
-.pull-right-2 {
-  margin-left: 445px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .align-items {
@@ -88,6 +85,17 @@ strong {
   margin-right: 10px;
   width: 25px;
   height: 25px;
+}
+
+.posts-persona {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.posts-persona-cabecalho {
+  display: flex;
+  align-items: center;
 }
 
 .posts-persona img {
@@ -311,11 +319,18 @@ strong {
 }
 
 @media (max-width: 614px) {
+  .posts {
+    margin-bottom: 60px;
+  }
   .esquerda {
     margin-left: 400px;
   }
   .tamanho-icone {
     margin-right: 20px;
+  }
+
+  .coluna-de-posts {
+    margin: 50px 0;
   }
 
   .caixa-stories {
