@@ -314,6 +314,15 @@ strong {
 }
 
 @media (max-width: 614px) {
+
+  .conteudo {
+    min-width: 614px;
+  }
+
+  .coluna-de-posts {
+    min-width: 100%;
+  }
+
   .navbar-mobile {
     min-width: 900px;
     display: flex;
@@ -323,6 +332,7 @@ strong {
   }
 
   .posts {
+    min-width: 100%;
     margin-bottom: 60px;
   }
 
@@ -331,7 +341,7 @@ strong {
   }
 
   .caixa-stories {
-    width: 100%;
+    min-width: 100%;
     justify-content: space-between;
     background-color: #fafafa;
     margin-top: 10px;
