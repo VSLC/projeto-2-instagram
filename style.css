@@ -315,7 +315,7 @@ strong {
 
 @media (max-width: 614px) {
   .navbar-mobile {
-    width: 100%;
+    min-width: 900px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -323,7 +323,6 @@ strong {
   }
 
   .posts {
-    min-width: 100%;
     margin-bottom: 60px;
   }
 
